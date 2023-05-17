@@ -12,3 +12,13 @@ class Player:
 
     def threes_percent(self):
         return self.threes_m / self.threes_a
+
+    def twos_percent(self):
+        return (self.fgm - self.threes_m) / (self.fga - self.threes_a)
+
+    def shooting_percent(self):
+        return {
+            "overall": self.fg_percent(),
+            "3P%": self.threes_percent(),
+            "2P%": self.twos_percent(),
+        }
