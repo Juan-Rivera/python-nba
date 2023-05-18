@@ -22,3 +22,10 @@ class Player:
             "3P%": self.threes_percent(),
             "2P%": self.twos_percent(),
         }
+
+
+if __name__ == "__main__":
+    curry = Player("Steph Curry", "PG", 535, 1224, 285, 750)
+    print(curry.pos)
+    print(round(curry.fg_percent(), 3))
+    print(curry.shooting_percent())
